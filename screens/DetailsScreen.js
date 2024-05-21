@@ -7,33 +7,33 @@ const DetailsScreen = ({ navigation }) => {
       <Text>about me Screen</Text>
       <Button
         title="Go to About"
-        onPress={() => navigation.navigate('About')}//-> gaat naar About
+        onPress={() => navigation.navigate('About')}//-> go to About
       />
       <Text>Details Screen</Text>
       <Button
         title="Go to Details... again"
-        onPress={() => navigation.navigate('Details')}//-> we staan al op details dus zal niet reageren
+        onPress={() => navigation.navigate('Details')}//-> already on details so nothing will happen
       />
       <Button
         title="Go to Details... again"
-        onPress={() => navigation.push('Details')}//-> ookal staan we al op details, zal toch reageren
+        onPress={() => navigation.push('Details')}//-> already on details, will still navigate
       />
       <Button
         title="Go to Home"
-        onPress={() => navigation.navigate('Home')}//-> gaat naar HomeScreen
+        onPress={() => navigation.navigate('Home')}//-> go to HomeScreen
       />
       <Button
         title="Go back"
-        onPress={() => navigation.goBack()}//-> terug naar vorige scherm
+        onPress={() => navigation.goBack()}//-> back to previous screen
       />
       <Button
         title="Go to Details... again"
-        onPress={() => navigation.navigate('Details')}//-> we staan al op details dus zal niet reageren
+        onPress={() => navigation.navigate('Details')}//-> already on details so nothing will happen
       />
 
       <Button
         title="Go back to first screen in stack"
-        onPress={() => navigation.popToTop()}//-> ga naar het eerste scherm in de stack (toevallig nu ook home, wissel ze maar eens om in de stack en zie wat er zal gebeuren)
+        onPress={() => navigation.popToTop()}//-> go to the first screen in the stack
       />
     </View>
   );

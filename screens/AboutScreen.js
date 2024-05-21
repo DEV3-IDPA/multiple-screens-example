@@ -7,7 +7,7 @@ const AboutScreen = ({ navigation }) => {
       <Text>some info about me</Text>
       <Button
         title="Go back to first screen in stack"
-        onPress={() => navigation.popToTop()}//-> ga naar het eerste scherm in de stack (toevallig nu ook home, wissel ze maar eens om in de stack en zie wat er zal gebeuren)
+        onPress={() => navigation.popToTop()}//-> go to the first screen in the stack (in this case conincidentally also home, switch them and see what happens)
       />
     </View>
   );
